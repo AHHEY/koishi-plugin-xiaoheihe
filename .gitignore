@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build and package output
+*.tgz
+dist/
+coverage/
+
+# Local configuration, credentials and runtime state
+.env
+.env.*
+config.local.*
+koishi.yml
+koishi.local.yml
+data/
+*.local.json
+*.local.yml
+*.log
+
+# Editor / operating system
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Test artifacts
+*.tmp
+*.trace

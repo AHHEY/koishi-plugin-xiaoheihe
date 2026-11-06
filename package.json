@@ -1,0 +1,57 @@
+{
+  "name": "koishi-plugin-xiaoheihe",
+  "version": "0.1.0",
+  "description": "Read-only Xiaoheihe posts, comments, images and game evidence for Koishi, with a shared HDS observation bridge",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/**",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSE",
+    "VALIDATION.md"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check lib/*.js",
+    "test": "node --test test/security.test.cjs test/parsers.test.cjs test/image.test.cjs test/bridge.test.cjs test/game.test.cjs test/reader.test.cjs test/bili-provider.test.cjs test/plugin.test.cjs test/community-service.test.cjs test/lifecycle.test.cjs"
+  },
+  "keywords": [
+    "koishi",
+    "koishi-plugin",
+    "xiaoheihe",
+    "heybox",
+    "steam",
+    "hds",
+    "chatbot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AHHEY/koishi-plugin-xiaoheihe.git"
+  },
+  "homepage": "https://github.com/AHHEY/koishi-plugin-xiaoheihe#readme",
+  "bugs": {
+    "url": "https://github.com/AHHEY/koishi-plugin-xiaoheihe/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "koishi": "^4.18.0"
+  },
+  "devDependencies": {
+    "koishi": "^4.18.0"
+  },
+  "koishi": {
+    "description": "Read-only Xiaoheihe posts, comments, images and game evidence with a shared HDS observation bridge",
+    "service": {
+      "implements": [
+        "xiaoheihe",
+        "communityObservations"
+      ],
+      "optional": [
+        "interlude"
+      ]
+    }
+  }
+}

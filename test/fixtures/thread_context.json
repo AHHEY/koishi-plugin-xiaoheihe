@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "result": {
+    "post": {
+      "link_id": "30003",
+      "title": "脱敏正文标题",
+      "content": "帖子正文",
+      "user": { "uid": "51001", "nickname": "测试作者" },
+      "imgs": ["https://cdn.example.com/post-image.png"],
+      "create_at": 1700000000
+    },
+    "comments": [
+      {
+        "comment_id": "90001",
+        "content": "测试评论",
+        "user": { "uid": "52001", "nickname": "Alice" },
+        "children": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "result": {
+    "links": [
+      {
+        "linkid": "81001",
+        "title": "脱敏推荐流帖子",
+        "description": "这是一份仅用于测试的摘要。",
+        "user": { "uid": "51001", "nickname": "测试作者" },
+        "imgs": ["https://cdn.example.com/feed-image.png"],
+        "topics": [{ "name": "Steam" }, { "name": "PC游戏" }],
+        "comment_num": 2,
+        "up": 3,
+        "create_at": 1700000000
+      }
+    ]
+  }
+}
